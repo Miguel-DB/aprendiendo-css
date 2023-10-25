@@ -1,11 +1,40 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f2f2f2;
-}
-div, a {
-    background: #ccc;
+    background: #252525;
+    padding: 0;
+    margin: 0;
 }
 
-a{
+/*div, a {
+    background: #ccc;
+}*/
+
+/*a{
     visibility: hidden;
+}*/
+.hidden{
+    visibility: hidden;
+}
+/*Menu*/
+
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #2c4d3c;
+    width: 100%;
+    /*max-width: 1000px;*/
+    margin: 0px auto;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.menu li a:hover{
+    background: #95d2b2;
 }
