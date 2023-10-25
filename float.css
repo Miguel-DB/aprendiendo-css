@@ -3,8 +3,13 @@
     margin: 0;
     box-sizing: border-box ;
 }
+/*@font-face {
+    font-family: Exo2;
+    src: url("fonts/Exo2-Italic.ttf");
+}*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    font-family:'Exo 2', sans-serif;
     color: #fff;
     background: #252525;
    
@@ -38,11 +43,7 @@ body {
     display: block;
     text-decoration: none;
     padding: 20px;
-    
-}
-a{
-    position: relative;
-}
+    }
 
 .menu li a:hover{
     background: #95d2b2;
@@ -57,6 +58,7 @@ a{
     border-collapse: collapse;
     width: 500px;
     text-align: center;
+    margin: auto;
  }
  
  tr:hover{
@@ -122,6 +124,7 @@ input[type="submit"]:hover{
 /*Transformar elementos*/
 
 .box{
+    margin: auto;
     width:200px ;
     height:200px ;
     background:#fff ;
@@ -129,6 +132,7 @@ input[type="submit"]:hover{
 }
 /*Transiciones*/
 .caja2{
+    margin: auto;
     width: 200px;
     height: 200px;
     background: #1C5253;
@@ -139,4 +143,67 @@ input[type="submit"]:hover{
     background: #306B34;
     width: 400px;
     transform: rotate(180deg);
+}
+/*Animaciones*/
+@keyframes colores{
+    /*from{background: #9eb3c2;}
+    to{background: #21295c;} otra manera de escribir las animaciones*/
+    0% {background:#9eb3c2 ;}
+    25% {background:#1c7293 ; width: 300px;}
+    50% {background:#065a82 ; width: 400px;}
+    75% {background:#1b3b6f ; width: 300px;}
+    100% {background:#21295c ; width: 200px;}
+}
+@keyframes movimiento{
+    0%{transform: translate(20px);}
+    25%{transform: translate(40px); background: #1c7293;}
+    50%{transform: translate(60px); background: #065a82;}
+    75%{transform: translate(80px); background: #1b3b6f;}
+    100%{transform: translate(100px); background: #21295c;}
+}
+.caja3{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background: #9eb3c2;
+    animation-name: colores;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.caja4{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background: #9eb3c2;
+    animation: movimiento 5s ease infinite;/*otra manera de escribir las animaciones*/
+}
+/*Plantillas*/
+.contenedor{
+    width: 1000px;
+    margin: 20px auto;
+    background: #9eb3c2;
+}
+header{
+    background: #2c4d3c;
+    color: #fff;
+    padding: 20px;
+}
+.main{
+    padding: 20px;
+    background: #7db096;
+    width: 700px;
+    float: left;
+}
+aside{
+    background: #70a58a;
+    color: #fff;
+    padding: 20px;
+    width: 300px;
+    float: left;
+}
+footer{
+    clear: both;
+    padding: 20px;
+    background: #95d2b2;
+    color: #fff;
 }
